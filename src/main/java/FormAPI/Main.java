@@ -3,7 +3,7 @@ package FormAPI;
 import FormAPI.FormAPI.FormEventsHandler;
 import cn.nukkit.plugin.PluginBase;
 
-public class FormMain extends PluginBase {
+public class Main extends PluginBase {
 
     @Override()
     public void onEnable() {
