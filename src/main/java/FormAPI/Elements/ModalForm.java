@@ -1,7 +1,7 @@
-package FormAPI.FormAPI.Elements;
+package FormAPI.Elements;
 
-import FormAPI.FormAPI.Forms.Form;
-import FormAPI.FormAPI.Forms.ModalFormResponse;
+import FormAPI.Forms.Form;
+import FormAPI.Forms.ModalFormResponse;
 import cn.nukkit.Player;
 import cn.nukkit.form.window.FormWindowModal;
 

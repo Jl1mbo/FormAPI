@@ -1,7 +1,7 @@
-package FormAPI.FormAPI.Elements;
+package FormAPI.Elements;
 
-import FormAPI.FormAPI.Forms.Form;
-import FormAPI.FormAPI.Forms.SimpleFormResponse;
+import FormAPI.Forms.Form;
+import FormAPI.Forms.SimpleFormResponse;
 import cn.nukkit.Player;
 import cn.nukkit.form.element.ElementButton;
 import cn.nukkit.form.element.ElementButtonImageData;

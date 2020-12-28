@@ -1,7 +1,7 @@
-package FormAPI.FormAPI.Elements;
+package FormAPI.Elements;
 
-import FormAPI.FormAPI.Forms.CustomFormResponse;
-import FormAPI.FormAPI.Forms.Form;
+import FormAPI.Forms.CustomFormResponse;
+import FormAPI.Forms.Form;
 import cn.nukkit.Player;
 import cn.nukkit.form.element.*;
 import cn.nukkit.form.window.FormWindowCustom;

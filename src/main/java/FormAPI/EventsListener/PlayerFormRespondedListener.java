@@ -1,15 +1,14 @@
-package FormAPI.FormAPI;
+package FormAPI.EventsListener;
 
-import FormAPI.FormAPI.Forms.CustomFormResponse;
-import FormAPI.FormAPI.Forms.Form;
-import FormAPI.FormAPI.Forms.ModalFormResponse;
-import FormAPI.FormAPI.Forms.SimpleFormResponse;
+import FormAPI.Forms.CustomFormResponse;
+import FormAPI.Forms.Form;
+import FormAPI.Forms.ModalFormResponse;
+import FormAPI.Forms.SimpleFormResponse;
 import cn.nukkit.Player;
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.EventPriority;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.player.PlayerFormRespondedEvent;
-import cn.nukkit.event.player.PlayerQuitEvent;
 import cn.nukkit.form.response.FormResponse;
 import cn.nukkit.form.response.FormResponseCustom;
 import cn.nukkit.form.response.FormResponseModal;
@@ -22,7 +21,7 @@ import cn.nukkit.form.window.FormWindowSimple;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FormEventsHandler implements Listener {
+public class PlayerFormRespondedListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerFormResponded(PlayerFormRespondedEvent event) {
@@ -30,7 +29,7 @@ public class FormEventsHandler implements Listener {
         FormWindow formWindow = event.getWindow();
         FormResponse formResponse = formWindow.getResponse();
         if (Form.playersForm.containsKey(player.getName())) {
-            FormAPI.FormAPI.Forms.FormResponse temp = Form.playersForm.get(player.getName());
+            FormAPI.Forms.FormResponse temp = Form.playersForm.get(player.getName());
             Form.playersForm.remove(player.getName());
             Object data;
             if (formResponse == null || event.wasClosed()) {
@@ -58,11 +57,5 @@ public class FormEventsHandler implements Listener {
                 ((ModalFormResponse) temp).handle(player, (FormWindowModal) formWindow, (int) data);
             }
         }
-    }
-
-    @EventHandler(priority = EventPriority.HIGH)
-    public void onPlayerQuit(PlayerQuitEvent event) {
-        Player player = event.getPlayer();
-        Form.playersForm.remove(player.getName());
     }
 }

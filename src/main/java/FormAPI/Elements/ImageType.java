@@ -1,4 +1,4 @@
-package FormAPI.FormAPI.Elements;
+package FormAPI.Elements;
 
 public enum ImageType {
     PATH,

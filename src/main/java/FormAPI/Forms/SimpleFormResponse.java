@@ -1,4 +1,4 @@
-package FormAPI.FormAPI.Forms;
+package FormAPI.Forms;
 
 import cn.nukkit.Player;
 import cn.nukkit.form.window.FormWindowSimple;

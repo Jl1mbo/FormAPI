@@ -1,4 +1,4 @@
-package FormAPI.FormAPI.Forms;
+package FormAPI.Forms;
 
 public interface FormResponse {
 
