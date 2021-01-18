@@ -1,7 +1,7 @@
 package FormAPI;
 
-import FormAPI.EventsListener.PlayerFormRespondedListener;
-import FormAPI.EventsListener.PlayerQuitListener;
+import FormAPI.Components.EventsListener.PlayerFormRespondedListener;
+import FormAPI.Components.EventsListener.PlayerQuitListener;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.plugin.PluginManager;
 

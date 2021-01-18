@@ -4,7 +4,4 @@ version: "${pom.version}"
 api: "1.0.11"
 load: POSTWORLD
 author: Jl1mbo
-description: "Плагин на Формы"
 website: "vk.com/extranons"
-depend:
-  - PowerNukkit
